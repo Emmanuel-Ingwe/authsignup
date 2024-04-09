@@ -23,7 +23,7 @@ export const options: NextAuthOptions = {
                 }
             },
             async authorize(credentials) {
-                const user = { id: "42", name: "Dave", password: "nextauth" }
+                const user = { id: "42", name: "Maleek", password: "nextauth" }
 
                 if(credentials?.username === user.name && credentials?.password === user.password) {
                     return user
